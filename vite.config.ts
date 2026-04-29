@@ -14,14 +14,15 @@ export default defineConfig({
     host: "0.0.0.0",
     proxy: {
       "/api": {
-        target: "http://localhost:8000",
+        target: "https://rx-timechamp-be.onrender.com",
         changeOrigin: true,
-        secure: false,
+        secure: true,
       },
       "/ws": {
-        target: "ws://localhost:8000",
+        target: "wss://rx-timechamp-be.onrender.com",
         ws: true,
         changeOrigin: true,
+        secure: true,
       },
     },
   },

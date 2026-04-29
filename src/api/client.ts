@@ -8,7 +8,7 @@ import axios, {
 
 import { TOKEN_STORAGE_KEYS } from "@/config/constants";
 
-const BASE_URL = import.meta.env.VITE_API_BASE_URL ?? "http://localhost:8000/api/v1";
+const BASE_URL = import.meta.env.VITE_API_BASE_URL ?? "https://rx-timechamp-be.onrender.com/api/v1";
 
 interface QueuedRequest {
   resolve: (token: string) => void;

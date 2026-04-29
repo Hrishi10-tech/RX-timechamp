@@ -68,7 +68,7 @@ const columns = [
           onClick={() => {
             const url = (row as any).download_url;
             if (url) {
-              const baseUrl = 'http://localhost:8000/api/v1';
+              const baseUrl = 'https://rx-timechamp-be.onrender.com/api/v1';
               window.open(baseUrl + url, '_blank');
             }
           }}

@@ -188,6 +188,6 @@ export class WebSocketClient {
   }
 }
 
-const WS_URL = import.meta.env.VITE_WS_URL ?? "ws://localhost:8000/ws";
+const WS_URL = import.meta.env.VITE_WS_URL ?? "wss://rx-timechamp-be.onrender.com/ws";
 
 export const wsClient = new WebSocketClient({ url: WS_URL });
